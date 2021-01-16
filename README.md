@@ -1,2 +1,2 @@
 # MAX44000
-Proximity Sensor
+Proximity Sensor application in VHDL
