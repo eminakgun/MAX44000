@@ -60,15 +60,15 @@ architecture BEHAVIORAL of PROX is
             DATA_WIDTH : INTEGER := 8
         );
         port (
-            CLK        : in    STD_LOGIC;
-            FIFO_W     : in    STD_LOGIC;
-            FIFO_R     : in    STD_LOGIC;
+            CLK        : in  STD_LOGIC;
+            FIFO_W     : in  STD_LOGIC;
+            FIFO_R     : in  STD_LOGIC;
 
-            DATA_W     : in    STD_LOGIC_VECTOR(DATA_WIDTH - 1 downto 0);
-            DATA_R     : out   STD_LOGIC_VECTOR(DATA_WIDTH - 1 downto 0);
-            READ_VALID : out   STD_LOGIC;
-            WRITE_ACK  : out   STD_LOGIC;
-            F_EMPTY    : out   STD_LOGIC
+            DATA_W     : in  STD_LOGIC_VECTOR(DATA_WIDTH - 1 downto 0);
+            DATA_R     : out STD_LOGIC_VECTOR(DATA_WIDTH - 1 downto 0);
+            READ_VALID : out STD_LOGIC;
+            WRITE_ACK  : out STD_LOGIC;
+            F_EMPTY    : out STD_LOGIC
         );
     end component;
 
@@ -78,11 +78,11 @@ architecture BEHAVIORAL of PROX is
             CLK_F    : INTEGER := 100_000_000
         );
         port (
-            CLK          : in    STD_LOGIC;
-            SEND         : in    STD_LOGIC;
-            TX_DOUT      : out   STD_LOGIC;
-            TX_DATA_IN   : in    STD_LOGIC_VECTOR(7 downto 0);
-            TX_DONE_TICK : out   STD_LOGIC
+            CLK          : in  STD_LOGIC;
+            SEND         : in  STD_LOGIC;
+            TX_DOUT      : out STD_LOGIC;
+            TX_DATA_IN   : in  STD_LOGIC_VECTOR(7 downto 0);
+            TX_DONE_TICK : out STD_LOGIC
         );
     end component;
 
@@ -111,9 +111,9 @@ architecture BEHAVIORAL of PROX is
             CLK_F : INTEGER := 100_000_000
         );
         port (
-            CLK     : in    STD_LOGIC;
-            DATAIN  : in    STD_LOGIC;
-            DATAOUT : out   STD_LOGIC
+            CLK     : in  STD_LOGIC;
+            DATAIN  : in  STD_LOGIC;
+            DATAOUT : out STD_LOGIC
         );
     end component;
 
